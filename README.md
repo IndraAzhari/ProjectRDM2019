@@ -80,7 +80,7 @@ $ cd app
 
 $ python index.py --dataset static/images --index index.csv 
 
-![](foto/rdmimage1.png)
+![](foto/RdmImage1.png)
 
 7. Setelah itu untuk melihat output yang didapat dari index.cvs jalankan
 
