@@ -2,47 +2,72 @@
 
 ## Text-indexing : Swish-e (Package on Ubuntu)
 ### a. Requirements :
-####Instal swish-e jika belum ada
+#### Instal swish-e jika belum ada
 
 $ sudo apt-get install swish-e
 
 ### b. Proses-proses dalam menjalankan Program :
 1. buat folder Teks-indexing(Swish-e)
 2. masuk ke dalam folder Teks-indexing(Swish-e)
+
 $ cd Teks-indexing(Swish-e)
+
 3. buat folder data
 4. masuk ke dalam folder data
+
 $ cd data
+
 5. masukan file yang sudah di siapkan untuk di index ke dalam folder data
 6. buat file Main.conf sebagai program utama yang akan di jalankan
 7. di dalam file Main.conf isi dengan
+
 $ IndexDir ./data
 $ FuzzyIndexingMode Stemming_en1
 $ IndexContents TXT* .txt
-![](Screenshots/s4.PNG)
-7. jalankan $ swish-e -c Main.conf 
-![](Screenshots/s2.PNG)
 
-8.barulah kemudian jalankan, misalnya kata yang akan di cari adalah Java $ swish-e -w [kata yang ingin di cari] 
-![](Screenshots/s3.PNG)
+![](foto/RDMTesk0.jpg)
+
+8. jalankan $ swish-e -c Main.conf
+
+![](foto/RDMTesk1.jpg)
+![](foto/RDMTesk2.jpg)
+
+9.barulah kemudian jalankan, misalnya kata yang akan di cari adalah Java 
+
+$ swish-e -w [kata yang ingin di cari] 
+
+![](foto/RDMTesk4.jpg)
 
 ## Image-search-engine
 ### a. Requirements :
+#### Instal python3-pip jika belum ada
 
 $ sudo apt install python3-pip
 
-![](Screenshots/1.PNG)
-
-### b. Cara Menjalankan Program :
-1.  $ cd ./image-search-engine
-2.  $ pip install -r requirements.txt
-![](Screenshots/3.PNG)
-3.  $ cd ./app
-4.  $ python index.py --dataset static/images --index index.csv 
-![](Screenshots/4.PNG)
-5. Untuk melihat output dapat dari index.cvs
-![](Screenshots/5.PNG)
-6. gambar dapat di ganti di folder ./static/images
+### b. Proses-proses dalam menjalankan Program :
+1. Sebelum memulai clone ke dalam satu folder
+$ git clone https://github.com/kudeh/image-search-engine.git
+2. Masuk ke dalam folder
+$ cd image-search-engine/
+atau masuk ke dalam folder image-search-engine -> klik kanan -> open in terminal
+3. Jika belum pernah menginstal pip, maka instal dulu
+$ sudo apt-get install python3-pip
+4. Kemudian instal requirements.txt
+$ pip3 install -r requirements.txt
+5. Kemudian masuk ke folder app
+$ cd app
+6.Kemudian jalankan 
+$ python index.py --dataset static/images --index index.csv 
+![](foto/RDMImage1.jpg)
+7. Setelah itu untuk melihat output yang didapat dari index.cvs jalankan
+$ vim index.csv
+![](foto/RDMImage2.jpg)
+Hasilnya:
+![](foto/RDMImage3.jpg)
+untuk keluar tekan :exit kemudian enter
+![](foto/RDMImage4.jpg)
+8. Jika ingin mencoba dengan foto yang berbeda,ganti gambarpada folder static/images
+9. Jalankan kembali step 6 sampai dengan 7
 
 ## Source :
 * Text-Indexing: Swish-e (Package on Ubuntu)
