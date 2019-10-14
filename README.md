@@ -25,18 +25,18 @@ $ IndexDir ./data
 $ FuzzyIndexingMode Stemming_en1
 $ IndexContents TXT* .txt
 
-![](foto/RDMTesk0.jpg)
+![](foto/RDMTesk0.png)
 
 8. jalankan $ swish-e -c Main.conf
 
-![](foto/RDMTesk1.jpg)
-![](foto/RDMTesk2.jpg)
+![](foto/RDMTesk1.png)
+![](foto/RDMTesk2.png)
 
 9.barulah kemudian jalankan, misalnya kata yang akan di cari adalah Java 
 
 $ swish-e -w [kata yang ingin di cari] 
 
-![](foto/RDMTesk4.jpg)
+![](foto/RDMTesk4.png)
 
 ## Image-search-engine
 ### a. Requirements :
@@ -58,14 +58,14 @@ $ pip3 install -r requirements.txt
 $ cd app
 6.Kemudian jalankan 
 $ python index.py --dataset static/images --index index.csv 
-![](foto/RDMImage1.jpg)
+![](foto/RDMImage1.png)
 7. Setelah itu untuk melihat output yang didapat dari index.cvs jalankan
 $ vim index.csv
-![](foto/RDMImage2.jpg)
+![](foto/RDMImage2.png)
 Hasilnya:
-![](foto/RDMImage3.jpg)
+![](foto/RDMImage3.png)
 untuk keluar tekan :exit kemudian enter
-![](foto/RDMImage4.jpg)
+![](foto/RDMImage4.png)
 8. Jika ingin mencoba dengan foto yang berbeda,ganti gambarpada folder static/images
 9. Jalankan kembali step 6 sampai dengan 7
 
