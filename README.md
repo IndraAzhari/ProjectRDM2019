@@ -22,7 +22,9 @@ $ cd data
 7. di dalam file Main.conf isi dengan
 
 $ IndexDir ./data
+
 $ FuzzyIndexingMode Stemming_en1
+
 $ IndexContents TXT* .txt
 
 ![](foto/RDMTeks0.png)
